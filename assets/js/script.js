@@ -116,23 +116,29 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-/*=============================================
-=            PROJECT MODAL                    =
-=============================================*/
+
+/* ==========================================
+   PROJECT MODAL - TESTE
+========================================== */
 
 const projectModal = document.querySelector("[data-project-modal-container]");
 const projectOverlay = document.querySelector("[data-project-overlay]");
 const projectCloseBtn = document.querySelector("[data-project-modal-close-btn]");
 
-const openProjectModal = () => {
+const testeModal = document.querySelector("#teste-modal");
+
+function abrirProjeto() {
   projectModal.classList.add("active");
 }
 
-const closeProjectModal = () => {
+function fecharProjeto() {
   projectModal.classList.remove("active");
 }
 
-projectCloseBtn.addEventListener("click", closeProjectModal);
-projectOverlay.addEventListener("click", closeProjectModal);
+testeModal.addEventListener("click", function (e) {
+  e.preventDefault();
+  abrirProjeto();
+});
 
-/*=============================================*/
+projectCloseBtn.addEventListener("click", fecharProjeto);
+projectOverlay.addEventListener("click", fecharProjeto);
