@@ -116,3 +116,23 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+/*=============================================
+=            PROJECT MODAL                    =
+=============================================*/
+
+const projectModal = document.querySelector("[data-project-modal-container]");
+const projectOverlay = document.querySelector("[data-project-overlay]");
+const projectCloseBtn = document.querySelector("[data-project-modal-close-btn]");
+
+const openProjectModal = () => {
+  projectModal.classList.add("active");
+}
+
+const closeProjectModal = () => {
+  projectModal.classList.remove("active");
+}
+
+projectCloseBtn.addEventListener("click", closeProjectModal);
+projectOverlay.addEventListener("click", closeProjectModal);
+
+/*=============================================*/
