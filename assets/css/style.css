@@ -1880,3 +1880,136 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------*\
+  #PROJECT MODAL
+\*-----------------------------------*/
+
+.project-modal-container {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.project-modal-container.active {
+  display: flex;
+}
+
+.project-modal-container .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+.project-modal {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+
+  z-index: 2;
+
+  animation: modalFade .25s ease;
+}
+
+.project-modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: var(--onyx);
+  color: var(--orange-yellow-crayola);
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s;
+}
+
+.project-modal-close-btn:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
+.project-modal-banner img {
+  width: 100%;
+  display: block;
+
+  border-radius: 20px 20px 0 0;
+}
+
+.project-modal-content {
+  padding: 30px;
+}
+
+.project-modal-title {
+  margin-bottom: 8px;
+}
+
+.project-modal-category {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  margin-bottom: 20px;
+}
+
+.project-modal-description {
+  color: var(--light-gray);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.project-modal-tech h4 {
+  margin-bottom: 15px;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.project-tech-list li {
+  background: var(--onyx);
+  color: var(--orange-yellow-crayola);
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  font-size: var(--fs-7);
+}
+
+@keyframes modalFade {
+
+  from {
+    opacity: 0;
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
