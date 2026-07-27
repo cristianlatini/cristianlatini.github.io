@@ -118,14 +118,13 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 /* ==========================================
-   PROJECT MODAL - TESTE
+   PROJECT MODAL
 ========================================== */
 
 const projectModal = document.querySelector("[data-project-modal-container]");
 const projectOverlay = document.querySelector("[data-project-overlay]");
 const projectCloseBtn = document.querySelector("[data-project-modal-close-btn]");
-
-const testeModal = document.querySelector("#teste-modal");
+const projects = document.querySelectorAll("[data-project]");
 
 function abrirProjeto() {
   projectModal.classList.add("active");
@@ -135,9 +134,16 @@ function fecharProjeto() {
   projectModal.classList.remove("active");
 }
 
-testeModal.addEventListener("click", function (e) {
-  e.preventDefault();
-  abrirProjeto();
+projects.forEach(project => {
+
+  project.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    abrirProjeto();
+
+  });
+
 });
 
 projectCloseBtn.addEventListener("click", fecharProjeto);
