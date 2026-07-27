@@ -121,36 +121,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
    PROJECT MODAL
 ========================================== */
 
-const projectsData = {
-
-  "cafe-cloud": {
-
-    title: "Café com Cloud",
-
-    category: "Cloud & Microsoft 365",
-
-    image: "./assets/images/project-1.jpg",
-
-    description:
-      "Boletim diário desenvolvido para centralizar notícias de Azure, Microsoft 365, Segurança e Inteligência Artificial. O conteúdo é coletado automaticamente por RSS, processado por IA e publicado no Microsoft Teams.",
-
-    tech: [
-      "Azure",
-      "Microsoft 365",
-      "Microsoft Graph API",
-      "N8N",
-      "Gemini",
-      "RSS",
-      "Microsoft Teams"
-    ]
-
-  }
-
-};
-
 const projectModal = document.querySelector("[data-project-modal-container]");
 const projectOverlay = document.querySelector("[data-project-overlay]");
 const projectCloseBtn = document.querySelector("[data-project-modal-close-btn]");
+
+const modalImage = document.querySelector("[data-project-modal-image]");
+const modalTitle = document.querySelector("[data-project-modal-title]");
+const modalCategory = document.querySelector("[data-project-modal-category]");
+const modalDescription = document.querySelector("[data-project-modal-description]");
+const modalTech = document.querySelector("[data-project-modal-tech]");
+
 const projects = document.querySelectorAll("[data-project]");
 
 function abrirProjeto() {
@@ -166,6 +146,32 @@ projects.forEach(project => {
   project.addEventListener("click", function (e) {
 
     e.preventDefault();
+
+    const projectId = this.dataset.project;
+    const data = projectsData[projectId];
+
+    if (!data) return;
+
+    // Imagem
+    modalImage.src = data.image;
+    modalImage.alt = data.title;
+
+    // Textos
+    modalTitle.textContent = data.title;
+    modalCategory.textContent = data.category;
+    modalDescription.textContent = data.description;
+
+    // Tecnologias
+    modalTech.innerHTML = "";
+
+    data.tech.forEach(tech => {
+
+      const li = document.createElement("li");
+      li.textContent = tech;
+
+      modalTech.appendChild(li);
+
+    });
 
     abrirProjeto();
 
