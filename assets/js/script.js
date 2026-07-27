@@ -122,27 +122,53 @@ for (let i = 0; i < navigationLinks.length; i++) {
 ========================================== */
 const projectsData = {
 
- "cafe-cloud": {
+  "cafe-cloud": {
 
-  title: "Café com Cloud",
+    title: "Café com Cloud",
 
-  category: "Cloud & Microsoft 365",
+    category: "Cloud & Microsoft 365",
 
-  image: "./assets/images/cafecloud.png",
+    image: "./assets/images/cafecloud.png",
 
-  description:
-    "O Café com Cloud é um boletim diário criado para centralizar as principais novidades do ecossistema Microsoft. A solução coleta notícias automaticamente de blogs oficiais, RSS e portais especializados, utiliza Inteligência Artificial para resumir e organizar o conteúdo e publica tudo em um canal do Microsoft Teams por meio de Adaptive Cards. O projeto elimina a necessidade de pesquisa manual e mantém equipes de infraestrutura sempre atualizadas.",
+    description:
+      "O Café com Cloud é um boletim diário criado para centralizar as principais novidades do ecossistema Microsoft. A solução coleta notícias automaticamente de blogs oficiais, RSS e portais especializados, utiliza Inteligência Artificial para resumir e organizar o conteúdo e publica tudo em um canal do Microsoft Teams por meio de Adaptive Cards. O projeto elimina a necessidade de pesquisa manual e mantém equipes de infraestrutura sempre atualizadas.",
 
-  tech: [
-    "N8N",
-    "Microsoft Teams",
-    "Microsoft Graph API",
-    "Azure",
-    "Microsoft 365",
-    "RSS",
-    "Gemini AI"
-  ]
- }
+    tech: [
+      "N8N",
+      "Microsoft Teams",
+      "Microsoft Graph API",
+      "Azure",
+      "Microsoft 365",
+      "RSS",
+      "Gemini AI"
+    ]
+
+  }, // <-- vírgula
+
+  "agente-whatsapp": {
+
+    title: "Agente de Atendimento no WhatsApp",
+
+    category: "Agentes de IA",
+
+    image: "./assets/images/agentewpp.png",
+
+    description:
+      "Agente inteligente desenvolvido para automatizar o atendimento via WhatsApp utilizando IA generativa. A solução compreende mensagens em linguagem natural, responde dúvidas, realiza qualificação de clientes, agenda consultas através do Google Calendar e mantém o histórico das conversas utilizando memória persistente no Supabase. Toda a orquestração é realizada pelo N8N, integrando APIs e serviços corporativos em um fluxo totalmente automatizado.",
+
+    tech: [
+      "N8N",
+      "OpenAI",
+      "Google Gemini",
+      "Evolution API",
+      "WhatsApp",
+      "Supabase",
+      "Google Calendar",
+      "PostgreSQL"
+    ]
+
+  }
+
 };
 const projectModal = document.querySelector("[data-project-modal-container]");
 const projectOverlay = document.querySelector("[data-project-overlay]");
