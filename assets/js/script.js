@@ -120,6 +120,23 @@ for (let i = 0; i < navigationLinks.length; i++) {
 /* ==========================================
    PROJECT MODAL
 ========================================== */
+const projectsData = {
+
+  "cafe-cloud": {
+    title: "Café com Cloud",
+    category: "Cloud & Microsoft 365",
+    image: "./assets/images/project-1.jpg",
+    description:
+      "Boletim diário desenvolvido para centralizar notícias de Azure, Microsoft 365, Segurança e Inteligência Artificial.",
+    tech: [
+      "Azure",
+      "Microsoft 365",
+      "N8N",
+      "Gemini"
+    ]
+  }
+
+};
 
 const projectModal = document.querySelector("[data-project-modal-container]");
 const projectOverlay = document.querySelector("[data-project-overlay]");
