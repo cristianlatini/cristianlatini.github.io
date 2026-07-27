@@ -128,7 +128,7 @@ const projectsData = {
 
   category: "Cloud & Microsoft 365",
 
-  image: "./assets/images/project-1.jpg",
+  image: "./assets/images/cafecloud.png",
 
   description:
     "O Café com Cloud é um boletim diário criado para centralizar as principais novidades do ecossistema Microsoft. A solução coleta notícias automaticamente de blogs oficiais, RSS e portais especializados, utiliza Inteligência Artificial para resumir e organizar o conteúdo e publica tudo em um canal do Microsoft Teams por meio de Adaptive Cards. O projeto elimina a necessidade de pesquisa manual e mantém equipes de infraestrutura sempre atualizadas.",
