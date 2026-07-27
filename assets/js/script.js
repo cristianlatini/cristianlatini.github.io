@@ -125,7 +125,7 @@ const projectsData = {
   "cafe-cloud": {
     title: "Café com Cloud",
     category: "Cloud & Microsoft 365",
-    image: "./assets/images/project-1.jpg",
+    image: "./assets/images/cafecloud.jpg",
     description:
       "Boletim diário desenvolvido para centralizar notícias de Azure, Microsoft 365, Segurança e Inteligência Artificial.",
     tech: [
