@@ -122,22 +122,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
 ========================================== */
 const projectsData = {
 
-  "cafe-cloud": {
-    title: "Café com Cloud",
-    category: "Cloud & Microsoft 365",
-    image: "./assets/images/cafecloud.png",
-    description:
-      "Boletim diário desenvolvido para centralizar notícias de Azure, Microsoft 365, Segurança e Inteligência Artificial.",
-    tech: [
-      "Azure",
-      "Microsoft 365",
-      "N8N",
-      "Gemini"
-    ]
-  }
+ "cafe-cloud": {
 
-};
+  title: "Café com Cloud",
 
+  category: "Cloud & Microsoft 365",
+
+  image: "./assets/images/project-1.jpg",
+
+  description:
+    "O Café com Cloud é um boletim diário criado para centralizar as principais novidades do ecossistema Microsoft. A solução coleta notícias automaticamente de blogs oficiais, RSS e portais especializados, utiliza Inteligência Artificial para resumir e organizar o conteúdo e publica tudo em um canal do Microsoft Teams por meio de Adaptive Cards. O projeto elimina a necessidade de pesquisa manual e mantém equipes de infraestrutura sempre atualizadas.",
+
+  tech: [
+    "N8N",
+    "Microsoft Teams",
+    "Microsoft Graph API",
+    "Azure",
+    "Microsoft 365",
+    "RSS",
+    "Gemini AI"
+  ]
+
+},
 const projectModal = document.querySelector("[data-project-modal-container]");
 const projectOverlay = document.querySelector("[data-project-overlay]");
 const projectCloseBtn = document.querySelector("[data-project-modal-close-btn]");
