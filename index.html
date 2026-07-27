@@ -444,8 +444,6 @@
 
         </section>
 
-      
-
       </article>
 
        <li
@@ -501,16 +499,75 @@
   </a>
 
 </li>
+<!--
+        - #PORTFÓLIO
+      -->
 
+      <article class="portfolio" data-page="portfólio">
 
+        <header>
+          <h2 class="h2 article-title">Portfólio</h2>
+        </header>
 
+        <section class="projects">
 
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Todos</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Cloud & M365</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Agentes de IA</button>
+            </li>
+          </ul>
 
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selec-value>Selecione a categoria</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+          </div>
+
+          <ul class="project-list">
+            
+            <li class="project-item active" data-filter-item data-category="cloud & m365" data-project="cafe-cloud">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/cafecloud.png" alt="Café com Cloud" loading="lazy">
+                </figure>
+                <h3 class="project-title">Café com Cloud</h3>
+                <p class="project-category">Cloud & M365</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="agentes de ia" data-project="agente-whatsapp">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/agentewpp.png" alt="Agente de Atendimento no WhatsApp" loading="lazy">
+                </figure>
+                <h3 class="project-title">Agente de Atendimento (WhatsApp)</h3>
+                <p class="project-category">Agentes de IA</p>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+      
       <!--
         - #ACADÊMICO
       -->
 
-      
 <article class="blog" data-page="acadêmico">
 
   <header>
@@ -593,10 +650,6 @@
 </section>
 
 </article>
-
-
-
-
 
 
       <!--
