@@ -142,8 +142,8 @@ const projectsData = {
     "RSS",
     "Gemini AI"
   ]
-
-},
+ }
+};
 const projectModal = document.querySelector("[data-project-modal-container]");
 const projectOverlay = document.querySelector("[data-project-overlay]");
 const projectCloseBtn = document.querySelector("[data-project-modal-close-btn]");
