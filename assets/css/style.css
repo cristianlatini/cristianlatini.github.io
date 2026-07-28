@@ -1765,6 +1765,11 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 1250px) {
+	.contact-info :is(.contact-link) {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 
   /**
    * RESET
