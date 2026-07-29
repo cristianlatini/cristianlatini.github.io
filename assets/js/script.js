@@ -164,7 +164,7 @@ const projectsData = {
       "Google Calendar",
       "PostgreSQL"
     ]
-  }
+  },
  "automacao-lansweeper": {
 
     title: "Inventário Automatizado de Softwares",
