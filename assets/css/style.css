@@ -806,6 +806,60 @@ main {
   height: 100%;
   border-radius: inherit;
 }
+.competencies { margin-bottom: 35px; }
+
+.competencies-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.competency-card {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.competency-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.competency-category { margin-bottom: 12px; }
+
+.competency-items li {
+  position: relative;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+
+.competency-items li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-gradient-yellow);
+}
+
+.competency-items li:last-child { margin-bottom: 0; }
+
+@media (min-width: 580px) {
+  .competencies-list { grid-template-columns: 1fr 1fr; }
+}
 
 /*-----------------------------------*\
   #PORTFOLIO
