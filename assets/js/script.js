@@ -174,14 +174,12 @@ const projectsData = {
     image: "./assets/images/softwareinventory.png",
 
     description:
-      "Desenvolvimento de uma solução de automação para gerenciamento de inventário de softwares utilizando Lansweeper, Power Automate e SharePoint Online.
-
-"A solução automatiza a importação e atualização dos relatórios do Lansweeper, garantindo que os dados sejam processados e centralizados no SharePoint sem necessidade de intervenção manual, mantendo o inventário sempre atualizado para consultas e relatórios.",
+      "Desenvolvimento de uma solução de automação para gerenciamento de inventário de softwares utilizando Lansweeper, Power Automate e SharePoint. A solução automatiza a importação e atualização dos relatórios do Lansweeper, garantindo que os dados sejam processados e centralizados no SharePoint sem necessidade de intervenção manual, mantendo o inventário sempre atualizado para consultas e relatórios.",
 
     tech: [
      "Power Automate",
     "Lansweeper",
-        "Sharepoint",
+        "SharePoint",
         "Microsoft Lists",
         "Excel",
         "Microsoft 365"
