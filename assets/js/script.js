@@ -165,7 +165,7 @@ const projectsData = {
       "PostgreSQL"
     ]
   }
- "cafe-cloud": {
+ "automacao-lansweeper": {
 
     title: "Inventário Automatizado de Softwares",
 
