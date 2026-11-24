@@ -165,6 +165,71 @@ const projectsData = {
       "PostgreSQL"
     ]
   },
+    "nf-projetistas": {
+
+    title: "Automação de Recebimento de NF-e",
+
+    category: "Automação",
+
+    image: "./assets/images/nf-projetistas.png",
+
+    description:
+      "Solução de automação para o processo de recebimento e aprovação de notas fiscais dos projetistas. O fluxo começa com uma solicitação via Microsoft Forms, registra as informações no SharePoint Lists e utiliza o N8N para disponibilizar o link de upload dos documentos. Após o envio, os arquivos são processados, o responsável recebe a solicitação de aprovação e o resultado é comunicado automaticamente pelo Microsoft Teams. As notas aprovadas também são registradas em planilha, garantindo rastreabilidade e reduzindo atividades manuais.",
+
+    tech: [
+      "Microsoft Forms",
+      "Power Automate",
+      "SharePoint Lists",
+      "N8N",
+      "Microsoft Graph API",
+      "Microsoft Teams",
+      "Microsoft Excel"
+    ]
+
+  },
+
+  "gestao-estoque": {
+
+    title: "Gestão de Estoque de TI",
+
+    category: "Automação",
+
+    image: "./assets/images/gestao-estoque.png",
+
+    description:
+      "Projeto de uma plataforma web para controle de estoque e movimentação de equipamentos de TI. A solução foi concebida para registrar entradas e saídas, controlar fabricantes, identificar responsáveis e setores, associar equipamentos a chamados e acompanhar o ciclo de vida dos ativos. Também prevê controle por patrimônio, registro de devoluções e histórico de movimentações, proporcionando maior rastreabilidade e organização dos recursos de TI.",
+
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Supabase Auth",
+      "Row Level Security",
+      "Microsoft Entra ID"
+    ]
+
+  },
+
+  "ad-manager": {
+
+    title: "AD Manager",
+
+    category: "Automação",
+
+    image: "./assets/images/ad-manager.png",
+
+    description:
+      "Solução voltada à gestão de solicitações de acesso para corretores, centralizando o processo de solicitação e atendimento pela equipe de TI. O projeto busca organizar o fluxo de concessão de acessos, reduzir atividades manuais e proporcionar maior controle sobre as demandas de identidade e acesso.",
+
+    tech: [
+      "Active Directory",
+      "Gestão de Identidade",
+      "Controle de Acessos"
+    ]
+
+  }
  "automacao-lansweeper": {
 
     title: "Inventário Automatizado de Softwares",
