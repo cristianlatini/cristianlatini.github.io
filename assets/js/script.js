@@ -229,7 +229,7 @@ const projectsData = {
       "Controle de Acessos"
     ]
 
-  }
+  },
  "automacao-lansweeper": {
 
     title: "Inventário Automatizado de Softwares",
